@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="simple landing page for rent cars" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/framework.css" />
+    <link rel="stylesheet" type="text/css" href="css/landing.css" />
+    <title>Rent Cars</title>
+    <!--attach google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!--attach font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="content w-full">
+      <div class="cover mb-150 p-relative">
+        <!--start head-->
+        <div class="head d-flex space-between">
+          <div class="logo-img">
+            <img src="imgs/CARMANIA copy 1.png" alt="logo-img" />
+          </div>
+          <input class="input-nav" type="checkbox" id="toggle" />
+          <nav class="navigation-menu d-relative">
+            <label class="navbar-toggler" for="toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </label>
+            <ul class="nav-list d-flex pt-25">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="choice.html"
+                  aria-label="this page for choice"
+                  >Why choose it</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="rent.html"
+                  aria-label="this page for rent"
+                  >How to Rent?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="works.html"
+                  aria-label="this page for works"
+                  >How it works?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="deals.html"
+                  aria-label="this page for deals"
+                  >Catch Our Deals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link login-btn p-relative"
+                  href="#login"
+                  aria-label="this page for login"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!--end head-->
+        <!--start rent banner-->
+        <div class="rent-banner d-flex pl-90">
+          <div class="rent-info">
+            <div>
+              <h1 class="m-0">
+                Rent your favorite car in
+                <span class="c-blue">Easy</span> steps.
+              </h1>
+              <p class="c-grey">
+                Get a car wherever and whenever you need it with your iOS or
+                Android device
+              </p>
+              <div class="d-flex">
+                <div
+                  class="btn-shape d-flex flex-center bg-black w-fit c-white p-10"
+                >
+                  <i class="fa-brands fa-apple c-white fa-2x"></i>
+                  <div class="pl-10">
+                    <span class="d-block fs-12">Download on the</span>
+                    <span class="d-block fw-bold">App Store</span>
+                  </div>
+                </div>
+                <div
+                  class="btn-shape d-flex flex-center bg-black w-fit c-white ml-10 p-10"
+                >
+                  <i class="fa-solid fa-store c-white fa-2x"></i>
+                  <div class="pl-10">
+                    <span class="d-block fs-12">Download on the</span>
+                    <span class="d-block fw-bold">Google Play</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-cover">
+            <img src="imgs/car-png-16828-1.webp" alt="cover-image" />
+          </div>
+        </div>
+        <!--end rent banner-->
+        <!--start rent information-->
+        <div class="rent-information d-flex space between flex-center">
+          <div>
+            <p class="f-upper fs-12 fw-bold mb-3">location</p>
+            <input class="m-0" type="text" placeholder="Search your location" />
+          </div>
+          <div>
+            <p class="f-upper fs-12 fw-bold mb-5">pickup date</p>
+            <p class="m-0 fs-12">Tue 15 Feb, 09:00</p>
+          </div>
+          <div>
+            <p class="f-upper fs-12 fw-bold mb-5">return date</p>
+            <p class="m-0 fs-12">Thu 16 Feb, 11:00</p>
+          </div>
+          <a
+            href="#"
+            class="btn-shape bg-blue c-white fs-13 fw-bold"
+            aria-label="this for search"
+            >Search</a
+          >
+        </div>
+        <!--end rent information-->
+      </div>
+      <!--start brands-->
+      <div class="card txt-c brands d-flex space-between">
+        <img src="imgs/logo.webp" alt="logo-img" />
+        <img src="imgs/bmw.webp" alt="logo-img" />
+        <img src="imgs/tata-logo.webp" alt="logo-img" />
+        <img src="imgs/mahindra-logo.webp" alt="logo-img" />
+        <img src="imgs/logo1.webp" alt="logo-img" />
+        <img src="imgs/toyota-logo.webp" alt="logo-img" />
+        <img src="imgs/logo2.webp" alt="logo-img" />
+        <img src="imgs/logo.webp" alt="logo-img" />
+      </div>
+      <div class="slider">
+        <div>
+          <button class="btn-slide fw-bold" onclick="plusDivs(-1)">
+            &#10094;
+          </button>
+        </div>
+        <div>
+          <img class="mySlides" src="imgs/logo.webp" alt="logo-img" />
+          <img class="mySlides" src="imgs/bmw.webp" alt="logo-img" />
+          <img class="mySlides" src="imgs/tata-logo.webp" alt="logo-img" />
+          <img class="mySlides" src="imgs/mahindra-logo.webp" alt="logo-img" />
+          <img class="mySlides" src="imgs/logo1.webp" alt="logo-img" />
+          <img class="mySlides" src="imgs/toyota-logo.webp" alt="logo-img" />
+          <img class="mySlides" src="imgs/logo2.webp" alt="logo-img" />
+          <img class="mySlides" src="imgs/logo.webp" alt="logo-img" />
+        </div>
+        <div>
+          <button class="btn-slide fw-bold" onclick="plusDivs(1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+      <!--end brands-->
+      <!--start how it work-->
+      <div class="card txt-c">
+        <p class="f-upper fs-12 c-grey">how it works</p>
+        <h2 class="mb-10">
+          Rent your desired car with the following 3 working steps
+        </h2>
+        <div class="rent-row d-flex space-between">
+          <div class="rent-card">
+            <i class="fa-solid fa-location-dot c-blue bg-white"></i>
+            <h3>Pick Your location</h3>
+            <p class="c-grey fs-13">
+              choose your location and find your best car
+            </p>
+          </div>
+          <div class="rent-card">
+            <i class="fa-solid fa-calendar c-white bg-blue"></i>
+            <h3>Pick-up date/time</h3>
+            <p class="c-grey fs-13">
+              Select your pick up date and time to book your car
+            </p>
+          </div>
+          <div class="rent-card">
+            <i class="fa-solid fa-car c-blue bg-white"></i>
+            <h3>Book your Desired Car</h3>
+            <p class="c-grey fs-13">We ill deliver it directly to you</p>
+          </div>
+        </div>
+      </div>
+      <!--end how it work-->
+      <!--start popular cars-->
+      <div class="card popular-cars">
+        <p class="f-upper fs-12 c-grey txt-c">popular rent cars</p>
+        <h2 class="mb-10 txt-c">Most popular cars rental cars</h2>
+        <div class="popular-car-row">
+          <!--start details-->
+          <div class="rent-car-details">
+            <div class="image-rent-car">
+              <img
+                class="image-rent-car"
+                src="imgs/Red Mazda Car - 1180x664 1.png"
+                alt="rent-cars"
+              />
+            </div>
+            <div class="Rate fs-12">
+              <i class="fa-solid fa-star c-yellow"></i>
+              <span>4.8</span>
+              <span class="c-grey">[100+ Review]</span>
+              <p class="fs-14 fw-bold">i20 2018 Model - Noida,India</p>
+            </div>
+            <div class="details b-bottom">
+              <div class="d-flex space-between flex-center mb-3">
+                <div class="c-grey fs-12">
+                  <i class="fa-solid fa-user"></i>
+                  <span>4 Passengers</span>
+                </div>
+                <div class="c-grey fs-12">
+                  <i class="fa-regular fa-paper-plane"></i>
+                  <span>Manual</span>
+                </div>
+              </div>
+              <div class="d-flex space-between flex-center pb-10">
+                <div class="c-grey fs-12">
+                  <i class="fa-brands fa-slack"></i>
+                  <span>Air conditioning</span>
+                </div>
+                <div class="c-grey fs-12">
+                  <i class="fa-solid fa-folder-minus"></i>
+                  <span>4 Docs</span>
+                </div>
+              </div>
+            </div>
+            <div class="price d-flex space-between flex-center">
+              <div>
+                <span class="fs-13 fw-bold">RS.1,800</span>
+                <span class="c-grey fs-12">/day</span>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="c-blue fs-14 fw-bold"
+                  aria-label="this page for read more"
+                  >Read Now<i class="fa-solid fa-arrow-right pl-5"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--end details-->
+          <div class="rent-car-details">
+            <div class="image-rent-car">
+              <img src="imgs/Red Mazda Car 2- 1180x664 1.png" alt="rent-cars" />
+            </div>
+            <div class="Rate fs-12">
+              <i class="fa-solid fa-star c-yellow"></i>
+              <span>4.8</span>
+              <span class="c-grey">[100+ Review]</span>
+              <p class="fs-14 fw-bold">Tata Zest - XE Petrol</p>
+            </div>
+            <div class="details b-bottom">
+              <div class="d-flex space-between flex-center mb-3">
+                <div class="c-grey fs-12">
+                  <i class="fa-solid fa-user"></i>
+                  <span>4 Passengers</span>
+                </div>
+                <div class="c-grey fs-12">
+                  <i class="fa-regular fa-paper-plane"></i>
+                  <span>Manual</span>
+                </div>
+              </div>
+              <div class="d-flex space-between flex-center pb-10">
+                <div class="c-grey fs-12">
+                  <i class="fa-brands fa-slack"></i>
+                  <span>Air conditioning</span>
+                </div>
+                <div class="c-grey fs-12">
+                  <i class="fa-solid fa-folder-minus"></i>
+                  <span>4 Docs</span>
+                </div>
+              </div>
+            </div>
+            <div class="price d-flex space-between flex-center">
+              <div>
+                <span class="fs-13 fw-bold">RS.1,000</span>
+                <span class="c-grey fs-12">/day</span>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="c-blue fs-14 fw-bold"
+                  aria-label="this page for read"
+                  >Read Now<i class="fa-solid fa-arrow-right pl-5"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="rent-car-details">
+            <div class="image-rent-car">
+              <img src="imgs/Red Mazda Car 3- 1180x664 1.png" alt="rent-cars" />
+            </div>
+            <div class="Rate fs-12">
+              <i class="fa-solid fa-star c-yellow"></i>
+              <span>4.8</span>
+              <span class="c-grey">[100+ Review]</span>
+              <p class="fs-14 fw-bold">Suzuki Grand Vitara T</p>
+            </div>
+            <div class="details b-bottom">
+              <div class="d-flex space-between flex-center mb-3">
+                <div class="c-grey fs-12">
+                  <i class="fa-solid fa-user"></i>
+                  <span>4 Passengers</span>
+                </div>
+                <div class="c-grey fs-12">
+                  <i class="fa-regular fa-paper-plane"></i>
+                  <span>Manual</span>
+                </div>
+              </div>
+              <div class="d-flex space-between flex-center pb-10">
+                <div class="c-grey fs-12">
+                  <i class="fa-brands fa-slack"></i>
+                  <span>Air conditioning</span>
+                </div>
+                <div class="c-grey fs-12">
+                  <i class="fa-solid fa-folder-minus"></i>
+                  <span>4 Docs</span>
+                </div>
+              </div>
+            </div>
+            <div class="price d-flex space-between flex-center">
+              <div>
+                <span class="fs-13 fw-bold">RS.1,120</span>
+                <span class="c-grey fs-12">/day</span>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="c-blue fs-14 fw-bold"
+                  aria-label="this page for read more"
+                  >Read Now<i class="fa-solid fa-arrow-right pl-5"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="rent-car-details">
+            <div class="image-rent-car">
+              <img src="imgs/Red Mazda Car 4- 1180x664 1.png" alt="rent-cars" />
+            </div>
+            <div class="Rate fs-12">
+              <i class="fa-solid fa-star c-yellow"></i>
+              <span>4.8</span>
+              <span class="c-grey">[100+ Review]</span>
+              <p class="fs-14 fw-bold">
+                Hyundai Creta 2019-20 (Passion Orange)
+              </p>
+            </div>
+            <div class="details b-bottom">
+              <div class="d-flex space-between flex-center">
+                <div class="c-grey fs-12">
+                  <i class="fa-solid fa-user"></i>
+                  <span>2 Passengers</span>
+                </div>
+                <div class="c-grey fs-12">
+                  <i class="fa-regular fa-paper-plane"></i>
+                  <span>Manual</span>
+                </div>
+              </div>
+              <div class="d-flex space-between flex-center pb-10">
+                <div class="c-grey fs-12">
+                  <i class="fa-brands fa-slack"></i>
+                  <span>Air conditioning</span>
+                </div>
+                <div class="c-grey fs-12">
+                  <i class="fa-solid fa-folder-minus"></i>
+                  <span>4 Docs</span>
+                </div>
+              </div>
+            </div>
+            <div class="price d-flex space-between flex-center">
+              <div>
+                <span class="fs-13 fw-bold">RS.1,100</span>
+                <span class="c-grey fs-12">/day</span>
+              </div>
+              <div>
+                <a href="#" class="c-blue fs-14 fw-bold"
+                  >Read Now<i class="fa-solid fa-arrow-right pl-5"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#"
+          class="btn-all-vehicles w-fit fs-14 fw-bold d-block"
+          aria-label="this page for vehicles"
+          >Show All Vehicles<i class="fa-solid fa-arrow-right pl-5"></i
+        ></a>
+      </div>
+      <!--end popular cars-->
+      <!--start footer-->
+      <div class="footer p-relative">
+        <div class="download-app d-flex bg-blue">
+          <div>
+            <h2 class="m-0">Download Carmania App for free</h2>
+            <p>For faster, easier booking and exclusive deals.</p>
+            <div class="d-flex">
+              <div
+                class="btn-shape d-flex flex-center bg-black w-fit c-white p-10"
+              >
+                <i class="fa-brands fa-apple c-white fa-2x"></i>
+                <div class="pl-10">
+                  <span class="d-block fs-12">Download on the</span>
+                  <span class="d-block fw-bold">App Store</span>
+                </div>
+              </div>
+              <div
+                class="btn-shape d-flex flex-center bg-black w-fit c-white ml-10 p-10"
+              >
+                <i class="fa-solid fa-store c-white fa-2x"></i>
+                <div class="pl-10">
+                  <span class="d-block fs-12">Download on the</span>
+                  <span class="d-block fw-bold">Google Play</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="download-icons d-flex p-relative">
+            <div>
+              <img
+                src="imgs/clay-false-border-clay-only-false.webp"
+                alt="download-image"
+              />
+            </div>
+            <div>
+              <img
+                src="imgs/clay-false-border-clay-only-false (1).webp"
+                alt="download-image"
+              />
+            </div>
+
+            <!--img src="imgs/clay-false-border-clay-only-false (1).webp" alt="download-image"-->
+          </div>
+        </div>
+        <div class="footer-row d-flex space-between flex-center pb-10">
+          <div class="logo-img logo-footer">
+            <img src="imgs/CARMANIA white copy 1.png" alt="logo-img" />
+          </div>
+          <p class="address c-white fs-12">
+            Casa Woodstock, Shop no. 12, Gaur City, Ghaziabad - 201301
+          </p>
+          <div class="c-white fs-12">
+            <i class="fa-solid fa-phone"></i
+            ><span class="ml-10">+91-9140656920</span>
+          </div>
+          <div>
+            <p class="c-white">Follow Us</p>
+            <div class="social-links d-flex">
+              <a href="#" class="link-social" aria-label="this page for twitter"
+                ><i class="fa-brands fa-twitter c-white"></i
+              ></a>
+              <a
+                href="#"
+                class="link-social"
+                aria-label="this page for facebook"
+                ><i class="fa-brands fa-facebook-f c-white"></i
+              ></a>
+              <a
+                href="#"
+                class="link-social"
+                aria-label="this page for instagram"
+                ><i class="fa-brands fa-instagram c-white"></i
+              ></a>
+              <a href="#" class="link-social" aria-label="this page for youtube"
+                ><i class="fa-brands fa-youtube c-white"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright c-white txt-c">
+          <p class="fs-12">
+            Copyright 2022 © Dhruv Dikshit, All Rights Reserved.
+          </p>
+        </div>
+      </div>
+      <!--end footer-->
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>

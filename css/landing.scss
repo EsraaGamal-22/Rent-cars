@@ -1,0 +1,421 @@
+$cover_color: #ebebeb;
+$page_color: #ffffff;
+$main_color: #20bfb6;
+$alt-color: #929395;
+$footer_color: #010101;
+$section-color: #1d1e21;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+*:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.content {
+  background-color: $page_color;
+}
+.cover {
+  background-color: $cover_color;
+  width: 100%;
+}
+.head {
+  width: 100%;
+  @media (max-width: 920px) {
+    padding: 5px 20px;
+  }
+}
+.logo-img {
+  width: 240px;
+
+  @media (max-width: 920px) {
+    width: 150px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+.input-nav {
+  display: none;
+  &:checked {
+    + nav .nav-list {
+      transform: translateY(0);
+      z-index: 1;
+    }
+    + nav .navbar-toggler .bar:nth-child(1) {
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    + nav .navbar-toggler .bar:nth-child(2) {
+      display: none;
+    }
+    + nav .navbar-toggler .bar:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.navbar-toggler {
+  display: none;
+  height: min-content;
+  cursor: pointer;
+  @media (max-width: 920px) {
+    display: grid !important;
+    float: right;
+    margin-top: 20px;
+  }
+}
+.bar {
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  background: grey;
+  border-radius: 10%;
+}
+
+.nav-list {
+  width: 100%;
+
+  @media (max-width: 920px) {
+    display: grid;
+    position: absolute;
+    background-color: $page_color;
+    top: 70px;
+    left: 0px;
+    text-align: center;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: 0.6s;
+    padding-inline-start: 0 !important;
+  }
+  @media (max-width: 1280px) {
+    padding-left: 100px;
+  }
+
+  li {
+    margin-right: 32px;
+    @media (max-width: 920px) {
+      padding: 10px 0;
+      margin: auto;
+    }
+
+    a {
+      color: $section-color;
+      &:hover {
+        color: $main_color;
+      }
+    }
+  }
+}
+
+.login-btn {
+  &::before {
+    content: "";
+    width: 1px;
+    height: 32px;
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    background-color: #bebebe;
+    @media (max-width: 920px) {
+      display: none;
+    }
+  }
+}
+/* start rent-banner*/
+.rent-banner {
+  @media (max-width: 920px) {
+    display: block;
+    padding: 10px 25px;
+  }
+}
+
+.img-cover {
+  width: 850px;
+  height: 456px;
+  @media (max-width: 920px) {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.rent-info {
+  width: 69%;
+  @media (max-width: 920px) {
+    width: 100%;
+  }
+  h1 {
+    font-size: 60px;
+    width: 80%;
+    @media (max-width: 920px) {
+      width: 100%;
+      font-size: 35px;
+    }
+  }
+  p {
+    margin-top: 32px;
+    width: 69%;
+  }
+}
+.rent-information {
+  width: 80%;
+  padding: 20px 12px;
+  background-color: $page_color;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: -30px;
+  left: 100px;
+  @media (max-width: 920px) {
+    width: 90%;
+    display: block;
+    position: static;
+    margin: auto;
+    text-align: center;
+  }
+
+  @media (max-width: 1280px) {
+    bottom: -98px;
+    left: 100px;
+  }
+  div {
+    flex: 1;
+    @media (max-width: 920px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  input {
+    border: none;
+    &::placeholder {
+      color: #bfbfbf;
+    }
+  }
+  a {
+    padding: 10px 40px;
+    &:hover {
+      background-color: $alt-color;
+    }
+  }
+}
+/* end rent-banner*/
+/*start brands*/
+.card {
+  width: 1160px;
+  margin: 0 auto 150px auto;
+  @media (max-width: 1028px) {
+    display: block;
+    width: 100%;
+    height: fit-content;
+  }
+}
+.brands {
+  @media (max-width: 920px) {
+    display: none;
+  }
+}
+.slider {
+  display: none;
+
+  @media (max-width: 920px) {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 150px auto;
+  }
+}
+.mySlides {
+  display: none;
+}
+.btn-slide {
+  background-color: rgb(146 147 149 / 30%);
+  border-radius: 50%;
+  border: none;
+  font-size: 15px;
+  color: $main_color;
+  padding: 10px 15px;
+}
+/*end brands*/
+/*start how work*/
+.f-upper {
+  text-transform: uppercase;
+}
+.rent-row {
+  @media (max-width: 920px) {
+    display: block;
+  }
+}
+.rent-card {
+  @media (max-width: 920px) {
+    margin-bottom: 50px;
+  }
+  i {
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 8px;
+    padding: 23px 25px;
+  }
+}
+/*end how work*/
+/* start rent cars*/
+.popular-cars {
+  margin-bottom: 400px;
+}
+.popular-car-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  @media (min-width: 768px) and (max-width: 920px) {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+.rent-car-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+
+  @media (max-width: 920px) {
+    margin: 0 auto 30px auto;
+  }
+}
+.image-rent-car {
+  background-color: #f7f7fb;
+
+  img {
+    width: 100%;
+  }
+}
+.price {
+  padding: 10px 0;
+  a {
+    &:hover {
+      color: $alt-color;
+    }
+  }
+}
+.btn-all-vehicles {
+  border: 1px solid $section-color;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 40px auto auto auto;
+  color: $section-color;
+
+  &:hover {
+    background-color: $main_color;
+    color: $page_color;
+    border-color: $page_color;
+  }
+
+  i {
+    padding-left: 5px;
+  }
+}
+/* end rent cars*/
+/*start footer */
+.footer {
+  background-color: $footer_color;
+}
+.download-app {
+  padding: 50px 700px 50px 60px;
+  position: absolute;
+  top: -110px;
+  left: 100px;
+  border-radius: 10px;
+  @media (max-width: 920px) {
+    padding: 50px 30px;
+  }
+
+  @media (max-width: 414px) {
+    top: -170px;
+    left: 0;
+  }
+  @media (min-width: 500px) and (max-width: 540px) {
+    left: 60px;
+  }
+  @media (min-width: 600px) and (max-width: 820px) {
+    left: 170px;
+  }
+  @media (min-width: 819px) and (max-width: 920px) {
+    left: 250px;
+  }
+  @media (min-width: 1000px) and (max-width: 1024px) {
+    padding: 50px 700px 50px 60px;
+    font-size: 14px;
+    top: -200px;
+    left: 0;
+  }
+}
+.download-icons {
+  @media (max-width: 920px) {
+    display: none;
+  }
+  div {
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+  }
+  div + div {
+    left: 100px;
+  }
+}
+.footer-row {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+
+  @media (max-width: 920px) {
+    display: block;
+    text-align: center;
+  }
+}
+.logo-footer {
+  @media (max-width: 920px) {
+    margin: auto;
+  }
+}
+.address {
+  width: 13%;
+  @media (max-width: 920px) {
+    width: 100%;
+  }
+}
+.social-links {
+  @media (max-width: 920px) {
+    width: fit-content;
+    margin: auto;
+  }
+}
+.link-social {
+  padding: 10px 13px;
+  border-radius: 50%;
+  border: 1px solid $page_color;
+
+  & + & {
+    margin-left: 10px;
+  }
+  &:hover {
+    cursor: pointer;
+    border-color: $main_color;
+    & i {
+      color: $main_color;
+    }
+  }
+}
+.copyright {
+  border-top: 1px solid #505865;
+  padding: 10px 0;
+}
+/*end footer */

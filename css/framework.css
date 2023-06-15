@@ -1,0 +1,151 @@
+/* start box*/
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.d-block {
+  display: block;
+}
+
+/*end box*/
+/*start width*/
+.w-full {
+  width: 100%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/*end width*/
+/*start color*/
+.bg-black {
+  background-color: black;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-blue {
+  background-color: #20bfb6;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.c-grey {
+  color: #929395;
+}
+
+.c-blue {
+  color: #20bfb6;
+}
+
+.c-white {
+  color: #ffffff;
+}
+
+.c-yellow {
+  color: #ffbd3d;
+}
+
+/*end color*/
+/*start padding and margin*/
+.p-0 {
+  padding: 0;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-90 {
+  padding-left: 90px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mb-3 {
+  margin-bottom: 3px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 60px;
+}
+
+.mb-150 {
+  margin-bottom: 150px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+/*end padding and margin*/
+/*start font*/
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.txt-c {
+  text-align: center;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+/*end font*/
+/*start position*/
+.p-relative {
+  position: relative;
+}
+
+/*end position*/
+/*start shapes*/
+.btn-shape {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/*end shape*/
+.b-bottom {
+  border-bottom: 1px solid #eee;
+}/*# sourceMappingURL=framework.css.map */
