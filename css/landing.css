@@ -147,7 +147,7 @@ ul {
 @media (max-width: 920px) {
   .rent-banner {
     display: block;
-    padding: 10px 25px;
+    padding: 10px 25px 100px 25px;
   }
 }
 
@@ -204,6 +204,7 @@ ul {
     width: 95%;
     display: block;
     text-align: center;
+    top: 87%;
   }
 }
 .rent-information div {
