@@ -221,20 +221,18 @@ ul {
     display: none;
   }
 }
-.slider {
+/*.slider {
   display: none;
 
   @media (max-width: 920px) {
     width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
    margin:250px auto 150px auto;
   }
-}
-.mySlides {
+}*/
+/*.mySlides {
   display: none;
-}
+}*/
 .btn-slide {
   background-color: rgb(146 147 149 / 30%);
   border-radius: 50%;
@@ -267,14 +265,18 @@ ul {
 /* start rent cars*/
 .popular-cars{
   margin-bottom: 500px;
-  @media(max-width:1024px)
+  @media(max-width:919px)
   {
     margin-bottom: 250px;
+  }
+  @media(min-width:920)and (max-width:1024px)
+  {
+    margin-bottom: 300px;
   }
 }
 .popular-car-row {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns:repeat(4,1fr)/*repeat(auto-fill, minmax(250px, 1fr))*/;
   gap: 20px;
   @media (min-width: 768px) and (max-width: 920px) {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -284,8 +286,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*align-items: "stretch";
-  flex-grow: 1;*/
+ 
+  /*flex-grow: 1;*/
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 10px;
@@ -294,15 +296,16 @@ ul {
     margin: 0 auto 30px auto;
   }
 }
+/*.Rate,.details,.price{
+  flex-grow: 1;
+}*/
 .image-rent-car {
   background-color: #f7f7fb;
-
-  img {
-    width: 100%;
-  }
+  width: 100%;
+  
 }
 .price {
-  padding: 10px 0;
+ padding: 10px 0;
   a {
     &:hover {
       color: $alt-color;
@@ -356,9 +359,13 @@ ul {
     position: absolute;
     bottom: 0;
     left: 400px;
+    @media(max-width:1024px)
+    {
+      left:370px;
+    }
   }
   div + div {
-    left: 100px;
+    left: 150px;
   }
 }
 .footer-row {

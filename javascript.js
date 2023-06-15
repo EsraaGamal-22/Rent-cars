@@ -18,3 +18,10 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = "block";
 }
+$(document).ready(function(){
+  $('.slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+});

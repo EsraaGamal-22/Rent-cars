@@ -21,6 +21,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <!--slick slider-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!--Add the new slick-theme.css if you want the default styling-->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
   <body>
     <div class="content w-full">
@@ -83,7 +87,7 @@
         </div>
         <!--end head-->
         <!--start rent banner-->
-        <div class="rent-banner d-flex pl-90 pb-100 ">
+        <div class="rent-banner d-flex pl-90 pb-100">
           <div class="rent-info">
             <div>
               <h1 class="m-0">
@@ -165,14 +169,14 @@
         <img src="imgs/logo2.webp" alt="logo-img" />
         <img src="imgs/logo.webp" alt="logo-img" />
       </div>
-      <div class="slider">
+      <!--div class="slider">
         <div>
           <button class="btn-slide fw-bold" onclick="plusDivs(-1)">
             &#10094;
           </button>
         </div>
         <div>
-          <img class="mySlides" src="imgs/logo.webp" alt="logo-img" />
+          
           <img class="mySlides" src="imgs/bmw.webp" alt="logo-img" />
           <img class="mySlides" src="imgs/tata-logo.webp" alt="logo-img" />
           <img class="mySlides" src="imgs/mahindra-logo.webp" alt="logo-img" />
@@ -186,7 +190,12 @@
             &#10095;
           </button>
         </div>
-      </div>
+      </!--div-->
+      <!--div class="slider">
+        <div><img class="mySlides" src="imgs/logo.webp" alt="logo-img" /></div>
+        <div><img class="mySlides" src="imgs/tata-logo.webp" alt="logo-img" /></div>
+        <div>  <img class="mySlides" src="imgs/mahindra-logo.webp" alt="logo-img" /></div>
+      </!--div-->
       <!--end brands-->
       <!--start how it work-->
       <div class="card txt-c">
@@ -224,13 +233,11 @@
         <div class="popular-car-row">
           <!--start details-->
           <div class="rent-car-details">
-            <div class="image-rent-car">
-              <img
-                class="image-rent-car"
-                src="imgs/Red Mazda Car - 1180x664 1.png"
-                alt="rent-cars"
-              />
-            </div>
+            <img
+              class="image-rent-car"
+              src="imgs/Red Mazda Car - 1180x664 1.png"
+              alt="rent-cars"
+            />
             <div class="Rate fs-12">
               <i class="fa-solid fa-star c-yellow"></i>
               <span>4.8</span>
@@ -276,9 +283,11 @@
           </div>
           <!--end details-->
           <div class="rent-car-details">
-            <div class="image-rent-car">
-              <img src="imgs/Red Mazda Car 2- 1180x664 1.png" alt="rent-cars" />
-            </div>
+            <img
+              class="image-rent-car"
+              src="imgs/Red Mazda Car 2- 1180x664 1.png"
+              alt="rent-cars"
+            />
             <div class="Rate fs-12">
               <i class="fa-solid fa-star c-yellow"></i>
               <span>4.8</span>
@@ -323,9 +332,12 @@
             </div>
           </div>
           <div class="rent-car-details">
-            <div class="image-rent-car">
-              <img src="imgs/Red Mazda Car 3- 1180x664 1.png" alt="rent-cars" />
-            </div>
+            <img
+              class="image-rent-car"
+              src="imgs/Red Mazda Car 3- 1180x664 1.png"
+              alt="rent-cars"
+            />
+
             <div class="Rate fs-12">
               <i class="fa-solid fa-star c-yellow"></i>
               <span>4.8</span>
@@ -370,9 +382,11 @@
             </div>
           </div>
           <div class="rent-car-details">
-            <div class="image-rent-car">
-              <img src="imgs/Red Mazda Car 4- 1180x664 1.png" alt="rent-cars" />
-            </div>
+            <img
+              class="image-rent-car"
+              src="imgs/Red Mazda Car 4- 1180x664 1.png"
+              alt="rent-cars"
+            />
             <div class="Rate fs-12">
               <i class="fa-solid fa-star c-yellow"></i>
               <span>4.8</span>
@@ -516,6 +530,16 @@
       </div>
       <!--end footer-->
     </div>
+    <!--slick js -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="javascript.js"></script>
   </body>
 </html>

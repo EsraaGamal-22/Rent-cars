@@ -252,23 +252,18 @@ ul {
   }
 }
 
-.slider {
+/*.slider {
   display: none;
-}
-@media (max-width: 920px) {
-  .slider {
+
+  @media (max-width: 920px) {
     width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 250px auto 150px auto;
+    display: block;
+   margin:250px auto 150px auto;
   }
-}
-
-.mySlides {
+}*/
+/*.mySlides {
   display: none;
-}
-
+}*/
 .btn-slide {
   background-color: rgba(146, 147, 149, 0.3);
   border-radius: 50%;
@@ -306,15 +301,20 @@ ul {
 .popular-cars {
   margin-bottom: 500px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 919px) {
   .popular-cars {
     margin-bottom: 250px;
+  }
+}
+@media (min-width: 920) and (max-width: 1024px) {
+  .popular-cars {
+    margin-bottom: 300px;
   }
 }
 
 .popular-car-row {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 @media (min-width: 768px) and (max-width: 920px) {
@@ -327,8 +327,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*align-items: "stretch";
-  flex-grow: 1;*/
+  /*flex-grow: 1;*/
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 10px;
@@ -339,10 +338,11 @@ ul {
   }
 }
 
+/*.Rate,.details,.price{
+  flex-grow: 1;
+}*/
 .image-rent-car {
   background-color: #f7f7fb;
-}
-.image-rent-car img {
   width: 100%;
 }
 
@@ -405,8 +405,13 @@ ul {
   bottom: 0;
   left: 400px;
 }
+@media (max-width: 1024px) {
+  .download-icons div {
+    left: 370px;
+  }
+}
 .download-icons div + div {
-  left: 100px;
+  left: 150px;
 }
 
 .footer-row {
