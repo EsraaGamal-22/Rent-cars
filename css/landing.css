@@ -314,7 +314,7 @@ ul {
 
 .popular-car-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 @media (min-width: 768px) and (max-width: 920px) {
