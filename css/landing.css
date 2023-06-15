@@ -195,22 +195,15 @@ ul {
   box-shadow: 0 0 10px #ddd;
   border-radius: 8px;
   position: absolute;
-  bottom: -30px;
-  left: 100px;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media (max-width: 920px) {
   .rent-information {
-    width: 90%;
+    width: 95%;
     display: block;
-    position: static;
-    margin: auto;
     text-align: center;
-  }
-}
-@media (max-width: 1280px) {
-  .rent-information {
-    bottom: -98px;
-    left: 100px;
   }
 }
 .rent-information div {
@@ -240,7 +233,7 @@ ul {
 /* end rent-banner*/
 /*start brands*/
 .card {
-  width: 1160px;
+  width: 90%;
   margin: 0 auto 150px auto;
 }
 @media (max-width: 1028px) {
@@ -267,7 +260,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto 150px auto;
+    margin: 250px auto 150px auto;
   }
 }
 
@@ -310,7 +303,12 @@ ul {
 /*end how work*/
 /* start rent cars*/
 .popular-cars {
-  margin-bottom: 400px;
+  margin-bottom: 500px;
+}
+@media (max-width: 1024px) {
+  .popular-cars {
+    margin-bottom: 250px;
+  }
 }
 
 .popular-car-row {
@@ -328,6 +326,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /*align-items: "stretch";
+  flex-grow: 1;*/
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 10px;
@@ -375,44 +375,22 @@ ul {
 }
 
 .download-app {
+  width: 95%;
   padding: 50px 700px 50px 60px;
   position: absolute;
-  top: -110px;
-  left: 100px;
+  top: -170px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 10px;
 }
 @media (max-width: 920px) {
-  .download-app {
-    padding: 50px 30px;
+  .download-app div {
+    margin: auto;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 920px) {
   .download-app {
-    top: -170px;
-    left: 0;
-  }
-}
-@media (min-width: 500px) and (max-width: 540px) {
-  .download-app {
-    left: 60px;
-  }
-}
-@media (min-width: 600px) and (max-width: 820px) {
-  .download-app {
-    left: 170px;
-  }
-}
-@media (min-width: 819px) and (max-width: 920px) {
-  .download-app {
-    left: 250px;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1024px) {
-  .download-app {
-    padding: 50px 700px 50px 60px;
-    font-size: 14px;
-    top: -200px;
-    left: 0;
+    padding: 50px 20px;
   }
 }
 
@@ -466,9 +444,14 @@ ul {
 }
 
 .link-social {
+  width: 35px;
+  height: 35px;
   padding: 10px 13px;
   border-radius: 50%;
   border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .link-social + .link-social {
   margin-left: 10px;
