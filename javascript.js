@@ -1,27 +1,41 @@
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
-
-function showDivs(n) {
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex - 1].style.display = "block";
-}
-$(document).ready(function(){
-  $('.slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
+$(function () {
+  $(".multiple_items").slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: true,
+    infinite: false,
+    speed: 300,
+    // centerMode: true,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
   });
 });
+/** datetime picker */
+config = {
+  dateFormat: "d-m-Y",
+};
+flatpickr("input[type=datetime-local]", config);

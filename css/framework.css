@@ -3,12 +3,20 @@
   display: flex;
 }
 
+.d-flex-i {
+  display: flex !important;
+}
+
 .flex-center {
   align-items: center;
 }
 
 .space-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .d-block {

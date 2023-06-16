@@ -4,12 +4,14 @@ $main_color: #20bfb6;
 $alt-color: #929395;
 $footer_color: #010101;
 $section-color: #1d1e21;
+// GLOBAL
 * {
   box-sizing: border-box;
 }
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 *:focus {
   outline: none;
@@ -23,10 +25,13 @@ ul {
 .content {
   background-color: $page_color;
 }
+/*start head banner*/
 .cover {
   background-color: $cover_color;
   width: 100%;
 }
+
+
 .head {
   width: 100%;
   @media (max-width: 920px) {
@@ -130,6 +135,7 @@ ul {
     }
   }
 }
+/*end head banner*/
 /* start rent-banner*/
 .rent-banner {
   @media (max-width: 920px) {
@@ -177,17 +183,31 @@ ul {
   top: 95%;
   left: 50%;
   transform: translateX(-50%);
+
   @media (max-width: 920px) {
     width: 95%;
-    display: block;
     text-align: center;
     top: 87%;
   }
 
-  div {
+  form {
     flex: 1;
+
     @media (max-width: 920px) {
-      margin-bottom: 20px;
+      display: block;
+    }
+    div {
+      flex: 1;
+      @media (max-width: 920px) {
+        margin-bottom: 20px;
+      }
+    }
+    button {
+      padding: 10px 40px;
+      border: none;
+      &:hover {
+        background-color: $alt-color;
+      }
     }
   }
 
@@ -197,42 +217,32 @@ ul {
       color: #bfbfbf;
     }
   }
-  a {
-    padding: 10px 40px;
-    &:hover {
-      background-color: $alt-color;
-    }
-  }
 }
 /* end rent-banner*/
 /*start brands*/
 .card {
   width: 90%;
-  margin:0 auto 150px auto;
- 
+  margin: 9rem auto;
+
   @media (max-width: 1028px) {
     display: block;
     width: 100%;
     height: fit-content;
   }
 }
-.brands {
+.slider {
+  // width: 40%;
+  display: flex;
+  padding: 0 2rem;
+
+  @media (max-width: 500px) {
+    padding: 0 1rem;
+  }
   @media (max-width: 920px) {
-    display: none;
+    margin: 20rem auto 8rem auto;
   }
 }
-/*.slider {
-  display: none;
 
-  @media (max-width: 920px) {
-    width: 50%;
-    display: block;
-   margin:250px auto 150px auto;
-  }
-}*/
-/*.mySlides {
-  display: none;
-}*/
 .btn-slide {
   background-color: rgb(146 147 149 / 30%);
   border-radius: 50%;
@@ -260,33 +270,32 @@ ul {
     border-radius: 8px;
     padding: 23px 25px;
   }
+  /*end how work*/
 }
-/*end how work*/
 /* start rent cars*/
-.popular-cars{
+.popular-cars {
   margin-bottom: 500px;
-  @media(max-width:919px)
-  {
+  @media (max-width: 919px) {
     margin-bottom: 250px;
   }
-  @media(min-width:920)and (max-width:1024px)
-  {
+  @media (min-width: 920) and (max-width: 1024px) {
     margin-bottom: 300px;
   }
 }
 .popular-car-row {
   display: grid;
-  grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   @media (min-width: 768px) and (max-width: 920px) {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
+  padding: 0 1.3rem;
 }
 .rent-car-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
+
   /*flex-grow: 1;*/
   border: 1px solid #eee;
   border-radius: 8px;
@@ -296,16 +305,13 @@ ul {
     margin: 0 auto 30px auto;
   }
 }
-/*.Rate,.details,.price{
-  flex-grow: 1;
-}*/
+
 .image-rent-car {
-  background-color: #f7f7fb;
+  // background-color: #f7f7fb;
   width: 100%;
-  
 }
 .price {
- padding: 10px 0;
+  padding: 10px 0;
   a {
     &:hover {
       color: $alt-color;
@@ -359,9 +365,8 @@ ul {
     position: absolute;
     bottom: 0;
     left: 400px;
-    @media(max-width:1024px)
-    {
-      left:370px;
+    @media (max-width: 1024px) {
+      left: 370px;
     }
   }
   div + div {

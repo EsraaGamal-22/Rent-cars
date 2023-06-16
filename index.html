@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="simple landing page for rent cars" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/framework.css" />
-    <link rel="stylesheet" type="text/css" href="css/landing.css" />
+    
     <title>Rent Cars</title>
     <link rel="icon" type="image/x-icon" href="imgs/car-cover.png" />
     <!--attach google font-->
@@ -23,8 +22,16 @@
     />
     <!--slick slider-->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <!--Add the new slick-theme.css if you want the default styling-->
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!--date picker-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+
+    <!-- MINE -->
+    <link rel="stylesheet" type="text/css" href="css/framework.css" />
+    <link rel="stylesheet" type="text/css" href="css/landing.css" />
   </head>
   <body>
     <div class="content w-full">
@@ -130,72 +137,54 @@
         </div>
         <!--end rent banner-->
         <!--start rent information-->
-        <div class="rent-information d-flex space between flex-center">
-          <div>
-            <form>
+        <div class="rent-information">
+          <form class="d-flex space between flex-center">
+            <div>
               <label class="f-upper fs-12 fw-bold mb-3 d-block">location</label>
               <input
                 class="m-0"
                 type="text"
                 placeholder="Search your location"
               />
-            </form>
-          </div>
-          <div>
-            <p class="f-upper fs-12 fw-bold mb-5">pickup date</p>
-            <p class="m-0 fs-12">Tue 15 Feb, 09:00</p>
-          </div>
-          <div>
-            <p class="f-upper fs-12 fw-bold mb-5">return date</p>
-            <p class="m-0 fs-12">Thu 16 Feb, 11:00</p>
-          </div>
-          <a
-            href="#"
-            class="btn-shape bg-blue c-white fs-13 fw-bold"
-            aria-label="this for search"
-            >Search</a
-          >
+            </div>
+            <div>
+              <label class="f-upper fs-12 fw-bold mb-3 d-block"
+                >pickup date</label
+              >
+              <input
+                type="datetime-local"
+                class="form-control"
+                placeholder="enter date"
+              />
+            </div>
+            <div>
+              <label class="f-upper fs-12 fw-bold mb-3 d-block"
+                >return date</label
+              >
+              <input
+                type="datetime-local"
+                class="form-control"
+                placeholder="enter date"
+              />
+            </div>
+            <button
+            class="btn-shape bg-blue c-white fs-13 fw-bold">Search</button>
+          </form>
+
         </div>
         <!--end rent information-->
       </div>
       <!--start brands-->
-      <div class="card txt-c brands d-flex space-between">
-        <img src="imgs/logo.webp" alt="logo-img" />
-        <img src="imgs/bmw.webp" alt="logo-img" />
-        <img src="imgs/tata-logo.webp" alt="logo-img" />
-        <img src="imgs/mahindra-logo.webp" alt="logo-img" />
-        <img src="imgs/logo1.webp" alt="logo-img" />
-        <img src="imgs/toyota-logo.webp" alt="logo-img" />
-        <img src="imgs/logo2.webp" alt="logo-img" />
-        <img src="imgs/logo.webp" alt="logo-img" />
+      <div class="slider multiple_items">
+        <div class="d-flex-i justify-center"><img src="imgs/logo.webp" alt="logo-img" /></div>
+        <div class="d-flex-i justify-center"><img src="imgs/bmw.webp" alt="logo-img" /></div>
+        <div class="d-flex-i justify-center"><img src="imgs/logo1.webp" alt="logo-img" /></div>
+        <div class="d-flex-i justify-center"><img src="imgs/toyota-logo.webp" alt="logo-img" /></div>
+        <div class="d-flex-i justify-center"><img src="imgs/logo2.webp" alt="logo-img" /></div>
+        <div class="d-flex-i justify-center"><img src="imgs/logo.webp" alt="logo-img" /></div>
+        <div class="d-flex-i justify-center"><img src="imgs/tata-logo.webp" alt="logo-img" /></div>
+        <div class="d-flex-i justify-center"><img src="imgs/mahindra-logo.webp" alt="logo-img" /></div>
       </div>
-      <!--div class="slider">
-        <div>
-          <button class="btn-slide fw-bold" onclick="plusDivs(-1)">
-            &#10094;
-          </button>
-        </div>
-        <div>
-          
-          <img class="mySlides" src="imgs/bmw.webp" alt="logo-img" />
-          <img class="mySlides" src="imgs/tata-logo.webp" alt="logo-img" />
-          <img class="mySlides" src="imgs/mahindra-logo.webp" alt="logo-img" />
-          <img class="mySlides" src="imgs/logo1.webp" alt="logo-img" />
-          <img class="mySlides" src="imgs/toyota-logo.webp" alt="logo-img" />
-          <img class="mySlides" src="imgs/logo2.webp" alt="logo-img" />
-          <img class="mySlides" src="imgs/logo.webp" alt="logo-img" />
-        </div>
-        <div>
-          <button class="btn-slide fw-bold" onclick="plusDivs(1)">
-            &#10095;
-          </button>
-        </div>
-      </!--div-->
-      <!--div class="slider">
-        <div><img class="mySlides" src="imgs/logo.webp" alt="logo-img" /></div>
-        <div><img class="mySlides" src="imgs/tata-logo.webp" alt="logo-img" /></div>
-        <div>  <img class="mySlides" src="imgs/mahindra-logo.webp" alt="logo-img" /></div>
-      </!--div-->
       <!--end brands-->
       <!--start how it work-->
       <div class="card txt-c">
@@ -540,6 +529,8 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!--datepicker-->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="javascript.js"></script>
   </body>
 </html>
